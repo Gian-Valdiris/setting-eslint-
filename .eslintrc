@@ -1,0 +1,30 @@
+//npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {"avoidEscape": true,"allowTemplateLiterals": true}
+    ],
+    "@typescript-eslint/no-unused-vars":"off",
+    "@typescript-eslint/semi":[
+      "error",
+      "always"
+    ],
+    "curly": "error", 
+    "no-empty": "error", 
+    "camelcase": ["error"],
+    "object-curly-spacing":"off",
+    "no-multi-spaces": [
+      "error", 
+      { 
+        "exceptions": { "ImportDeclaration": false,  "VariableDeclarator": true } 
+      }
+    ]
+  }
+}
